@@ -1,0 +1,186 @@
+/* Cuerpo */
+#principal{
+    background: linear-gradient(to right, rgb(173, 85, 14), rgb(216, 119, 28));
+}
+
+/* Encabezado */
+.encabezado{
+    position: absolute;
+    right: 1px;
+    width: 1535px;
+    height: 180px;
+}
+
+#logo{
+    position: relative;
+    left: 100px;
+    top: 10px;
+    width: 160px;
+    height: 160px;
+}
+
+#imglogo{
+    position: relative;
+    left: 5px;
+    top: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+.navegacion{
+    width: 900px;
+    height: 80px;
+    position: relative;
+    bottom: 100px;
+    left: 350px;
+
+}
+
+.navegacion ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegacion ul li{
+    list-style: none;
+    margin-left: 95px;
+    margin-top: 20px;
+    font-size: 23px;
+}
+
+.navegacion ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+
+.navegacion ul li a:hover{
+    color: #ffffff;
+    background-color: #f12c11;
+}
+
+.registro{
+    width: 110px;
+    height: 110px;
+    position: relative;
+    bottom: 210px;
+    left: 1400px;
+    font-size: 23px;
+}
+#imgregistro{
+    position:relative;
+    left:2px;
+    top:2px;
+    width:100px;
+    height:100px;
+}
+
+/* Menu de Comida */
+#Menu{
+    position:relative;
+    top:170px;
+    left:10px;
+    width:1500px;
+    height:1060px;
+}
+
+#content1{
+    position:absolute;
+    left:200px;
+    top:50px;
+    width:300px;
+    height:300px;
+}
+
+#content2{
+    position:absolute;
+    left:730px;
+    top:200px;
+}
+#content3{
+    position:absolute;
+    left:1050px;
+    top:50px;
+    width:300px;
+    height:300px;
+}
+
+#content4{
+    position:absolute;
+    left:400px;
+    top:600px;
+    width:300px;
+    height:300px;
+}
+
+#content5{
+    position:absolute;
+    left:830px;
+    top:600px;
+    width:300px;
+    height:300px;
+}
+
+.card{
+    position:absolute;
+    top:50%;
+    left:32%;
+    transform:translate(-50%, -50%);
+    width:340px;
+    height:480px;
+    background-color: #914818;
+    margin:62px;
+    border-radius:10px ;
+}
+
+.face{
+position:absolute;
+width:100%;
+height:100%;
+overflow:hidden;
+backface-visibility:hidden;
+border-radius:15px;
+transition:1s;
+}
+
+.img{
+width:100%;
+height:100%;
+}
+
+.front{
+transform:perspective(600px) rotateY(0deg);
+box-shadow:0 8px 10px #302a2a00;
+}
+
+.back{
+position:absolute;
+transform:perspective(600px) rotateY(180deg);
+background-color:#945522;
+color:white;
+padding:15px;
+display:flex;
+flex-direction:column;
+justify-content:space-evenly;
+text-align:center;
+box-shadow:0 8px 10px #000;
+}
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back {
+        transform: perspective(600px) rotateY(360deg);
+}
+.lin { 
+    border-top: solid 1px #ffffff;
+    padding-top: 25px;
+}
+.a {
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+}

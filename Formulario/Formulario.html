@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTMl</title>  
+</head>
+<body>
+    <fieldset style="width: 40%;"><!--borde del formulario-->
+        <legend>Datos personales</legend><!--Titulo en borde del formulario-->
+            <form action="guardar.php" method="post">
+                <p>
+                <input type="text" name="Nombre" placeholder="Escribe tu Nombre" size="30" required>
+                </p>
+                <p>
+                <input type="text" name="Apellido Paterno" placeholder="Escribe tu Apellido" size="30" required>
+                </p>
+                <p>
+                <input type="password" name="Contraseña" placeholder="Escribe tu Contraseña" maxlength="8" required>
+                </p>
+                <p> La hora es: <input type="time" name="Hora"></p>
+                <p> La fecha es: <input type="date" name="Fecha"></p>
+                <p>Eligue tu color favorito <input type="Color"></p>
+                <p>Sube un documento <input type="file" name="Doc"></p>
+                <textarea name="Comentario" rows="10" cols="40" placeholder="Escribe tu Comentario"></textarea>
+                <p>Genero:</p>
+                <label>Masculino</label><input type="radio" name="Genero" value="Masculino">
+                <label>Femenino</label><input type="radio" name="Genero" value="Femenino">
+                <label>Otro</label><input type="radio" name="Genero" value="Otro">
+                <p>Comida Favorita</p>
+                <p><input type="checkbox" name="Comida" value="Cecina">Cecina</p>
+                <p><input type="checkbox" name="Comida" value="Birria">Birria</p>
+                <p><input type="checkbox" name="Comida" value="Enchiladas">Enchiladas</p>
+                <input type="submit" value="Enviar" name="Enviar">
+                <input type="reset" value="Borrar" name="Borrar">
+            </form>
+    </fieldset>
+</body>
+</html>
